@@ -60,7 +60,7 @@ answer:
 
 please provide the  assets path,like below && use absolute path
 
-`/etc/vigil.cfg`
+`/etc/vigil.cfg` file
 
 ```code
 [assets]

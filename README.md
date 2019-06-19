@@ -42,3 +42,26 @@ this version support multi email send config
 from = "status@crisp.chat"
 to = "status@crisp.chat,status2@crisp.chat,status@crisp.chat"
 ```
+
+## TroubleShouting
+
+* `not found: "./res/assets/"`
+
+detail info:
+
+```code
+vigirl-monitor vigil: right: `true`: assets directory not found: "./res/assets/"', src/main.rs:143:5
+Jun 19 15:12:53 vigirl-monitor vigil: note: Run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
+Jun 19 15:12:53 vigirl-monitor systemd: vigil.service: main process exited, code=exited, status=101/n/a
+Jun 19 15:12:53 vigirl
+```
+
+answer:
+
+please provide the  assets path,like below && use absolute path
+
+```code
+[assets]
+
+path = "/etc/vigil/res/assets/"
+```
